@@ -15,15 +15,15 @@ yarn add svelte-transpile-typescript
 ## Using
 
 ```sh
-svelte-transpile-typescript -i src/index.ts -o dist/index.d.ts
+svelte-transpile-typescript -i src/Button.svelte -o dist/Button.svelte
 ```
 
 ### Options
 
-| Option                         | Alias           | Description |
-| ------------------------------ | --------------- | ----------- |
-| <code>--input [input]</code>   | <code>-i</code> | Input file  |
-| <code>--output [output]</code> | <code>-o</code> | Output file |
+| Option                         | Alias           | Description              |
+| ------------------------------ | --------------- | ------------------------ |
+| <code>--input [input]</code>   | <code>-i</code> | Input file or directory  |
+| <code>--output [output]</code> | <code>-o</code> | Output file or directory |
 
 ## NPM Statistics
 
