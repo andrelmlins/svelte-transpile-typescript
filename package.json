@@ -1,8 +1,9 @@
 {
   "name": "svelte-transpile-typescript",
   "description": "Transpile typescript in the svelte files",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
+  "types": "dist/index.ts",
   "license": "MIT",
   "homepage": "https://github.com/andrelmlins/svelte-transpile-typescript",
   "repository": "https://github.com/andrelmlins/svelte-transpile-typescript",

@@ -21,7 +21,7 @@ const transpileFile = async (inputPath: string, outputPath: string): Promise<voi
               },
             });
 
-            return { code: resultTranspile.outputText, map: resultTranspile.sourceMapText };
+            return { code: `\n${resultTranspile.outputText}`, map: resultTranspile.sourceMapText };
           }
 
           return { code: content };
@@ -34,7 +34,7 @@ const transpileFile = async (inputPath: string, outputPath: string): Promise<voi
   if (oldFs.existsSync(outputPath)) {
     await fs.unlink(outputPath);
   }
-  await fs.writeFile(outputPath, resultPreprocess.code);
+  await fs.writeFile(outputPath, resultPreprocess.code.replace('lang="ts"', '').replace("lang='ts'", ''));
 };
 
 const transpileFolder = async (input: string, output: string): Promise<void> => {
